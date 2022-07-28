@@ -2,7 +2,6 @@ import streamlit as st
 import streamlit_book as stb
 from PIL import Image, ImageEnhance
 
-path = PAGES
 # Set wide display
 st.set_page_config()
 
