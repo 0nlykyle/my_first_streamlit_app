@@ -1,6 +1,9 @@
+from tkinter import PAGES
 import streamlit as st
 import streamlit_book as stb
 from PIL import Image, ImageEnhance
+
+path = PAGES
 # Set wide display
 st.set_page_config()
 
@@ -23,6 +26,7 @@ if button2:
         password = st.text_input('รหัสผ่าน')
         confirmpassword = st.text_input('ยืนยันรหัสผ่าน')
         st.form_submit_button('sign up')
+
 
 
 
