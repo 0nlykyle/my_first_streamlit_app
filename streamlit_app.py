@@ -6,7 +6,7 @@ from PIL import Image, ImageEnhance
 st.set_page_config()
 
 # Set multipage
-stb.set_chapter_config(path="pages", save_answers=True)
+stb.set_chapter_config(path="pages")
 
 button1 = st.sidebar.button("Log in")
 if button1:
