@@ -3,7 +3,7 @@ import streamlit_book as stb
 from PIL import Image, ImageEnhance
 
 # Set wide display
-st.set_page_config()
+st.set_page_config(layout="wide", page_icon="https://cdn-icons-png.flaticon.com/512/607/607554.png", page_title="Splist")
 
 # Set multipage
 stb.set_chapter_config(path="pages")
@@ -31,5 +31,3 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-
-
