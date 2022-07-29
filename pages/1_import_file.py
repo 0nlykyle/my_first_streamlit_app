@@ -40,4 +40,11 @@ if button2:
         st.button("การเงิน 101")
         st.image("https://cdn.pixabay.com/photo/2015/09/15/15/53/bank-notes-941246_960_720.jpg")
 
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 
