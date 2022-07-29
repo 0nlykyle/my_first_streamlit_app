@@ -25,6 +25,11 @@ if button2:
         confirmpassword = st.text_input('ยืนยันรหัสผ่าน')
         st.form_submit_button('sign up')
 
-
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
