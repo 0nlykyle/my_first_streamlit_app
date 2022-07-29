@@ -38,3 +38,10 @@ if st.button("ถอดข้อความ"):
 		# Use the right file processor ( Docx,Docx2Text,etc)
 			raw_text = docx2txt.process(docx_file) # Parse in the uploadFile Class directory
 			st.write(raw_text)
+
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
