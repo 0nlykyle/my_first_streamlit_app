@@ -36,3 +36,9 @@ if (
         st.button("2.1.1 คิดว่าประชาธิปไตยคือการเลือกตั้ง")
         st.button("2.1.2 คิดว่ารัฐธรรมนูญดีจะทำให้เกิดประชาธิปไตยที่เข็มแข็ง")
 
+hide_st_style = """
+            <style>
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
