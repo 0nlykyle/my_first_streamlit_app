@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_book as stb
 
 if "button1" not in st.session_state:
     st.session_state.button1 = False
@@ -12,18 +13,22 @@ if (
 ):
     st.file_uploader("Upload your file here",type=['txt','docx','pdf'])
 
-#button1 = st.sidebar.button("นำเข้าไฟล์หนังสือ")
-#if button1:
-#    st.sidebar.file_uploader("Upload your file here",type=['txt','docx','pdf'])
+#ปุ่ม2: ดูไฟล์หนังสือในคลัง
+if "button2" not in st.session_state:
+    st.session_state.button2 = False
 
-button2 = st.button("ดูไฟล์หนังสือในคลัง")
-if button2:
+def callback():
+    st.session_state.button2 = True
+if (
+    st.button("ดูไฟล์หนังสือในคลัง", on_click = callback)
+    or st.session_state.button2
+):
     col1, col2, col3 = st.columns(3)
     col4, col5 = st.columns(2)
     with col1:
         st.button("ประชาธิปไตย")
         st.image("https://cdn.pixabay.com/photo/2017/03/16/07/50/statue-2148396_960_720.jpg")
-   
+    
     with col2:
         st.button("ชีทวิชานิติปรัชญา")
         st.image("https://cdn.pixabay.com/photo/2017/12/06/07/41/head-3001159_960_720.jpg")
